@@ -9,12 +9,21 @@ var JsUtils = (module && module.exports) || {};
 
 (function (exports) {
     exports.isObject = isObject;
+    exports.isObjectButNotArray = isObjectButNotArray;
     exports.isNotEmptyString = isNotEmptyString;
     exports.isNotNullObject = isNotNullObject;
     exports.cloneObject = cloneObject;
 
     function isObject(val) {
         if (typeof val === 'object') {
+            return true;
+        }
+
+        return false;
+    }
+
+    function isObjectButNotArray(val) {
+        if (isObject(val) && !Array.isArray(val)) {
             return true;
         }
 
