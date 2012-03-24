@@ -1,4 +1,11 @@
-var JsUtils = (typeof module !== 'undefined' && module.exports) || {};
+﻿/*
+ * JsUtils
+ * https://github.com/axin/JsUtils
+ * Author: Alexey Sazikin
+ * Licensed under MIT license
+ */
+
+var JsUtils = (module && module.exports) || {};
 
 (function (exports) {
     exports.isObject = isObject;
@@ -33,4 +40,4 @@ var JsUtils = (typeof module !== 'undefined' && module.exports) || {};
     function cloneObject(obj) {
         return JSON.parse(JSON.stringify(obj));
     }
-})(JsUtils);
+}(JsUtils));
