@@ -1,11 +1,11 @@
 ﻿/*
- * JsUtils
- * https://github.com/axin/JsUtils
+ * Common-Utils
+ * https://github.com/axin/common-utils
  * Author: Alexey Sazikin
  * Licensed under MIT license
  */
 
-var JsUtils = (module && module.exports) || {};
+var CommonUtils = (module && module.exports) || {};
 
 (function (exports) {
     exports.isObject = isObject;
@@ -49,4 +49,4 @@ var JsUtils = (module && module.exports) || {};
     function cloneObject(obj) {
         return JSON.parse(JSON.stringify(obj));
     }
-}(JsUtils));
+}(CommonUtils));
